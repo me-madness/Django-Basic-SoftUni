@@ -13,6 +13,4 @@ def index(request):
         '</ul>',
     ])
     
-    print(result)
-    
-    return HttpResponse(result)
+    return render(request, 'tasks/index.html')
