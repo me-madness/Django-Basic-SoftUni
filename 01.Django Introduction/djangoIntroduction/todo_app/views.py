@@ -9,7 +9,7 @@ def index(request):
     result = '\n'.join([
         '<h1>TASKS</h1>',
         '<ul>',
-        *[f"<li>{task.name}</li" for task in tasks],
+        *[f"<li>{task.name}</li>" for task in tasks],
         '</ul>',
     ])
     
