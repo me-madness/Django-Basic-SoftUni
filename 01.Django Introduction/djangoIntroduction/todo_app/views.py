@@ -4,13 +4,13 @@ from todo_app.models import Task
 # Create your views here.
 
 def index(request):
-    tasks = Task.objects.all()
+    title_filter = request.GET.get('title_filter', '')
     
-    result = '\n'.join([
-        '<h1>TASKS</h1>',
-        '<ul>',
-        *[f"<li>{task.name}</li>" for task in tasks],
-        '</ul>',
-    ])
+    tasks = Task.objects.filter(name__icontains=title_filter)
     
-    return render(request, 'tasks/index.html')
+    context = {
+        'title_filter': title_filter,
+        'tasks': tasks,
+    }
+    
+    return render(request, 'tasks/index.html', context)
