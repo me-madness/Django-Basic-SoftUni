@@ -1,14 +1,18 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from todo_app.models import Task
 # Create your views here.
 
-def my_view(request):
-    return HttpResponse("<h1>Main view</h1>") #MIME TYPE text/html
-
-
-def add_view(request):
-    return HttpResponse("<h1>Add view</h1>")
-
-
-def delete_view(request):
-    return HttpResponse("<h1>Delete view</h1>")
+def index(request):
+    tasks = Task.objects.all()
+    
+    result = '\n'.join([
+        '<h1>TASKS</h1>',
+        '<ul>',
+        *[f"<li>{task.name}</li" for task in tasks],
+        '</ul>',
+    ])
+    
+    print(result)
+    
+    return HttpResponse(result)
