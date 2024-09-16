@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 MY_APPS = [
-    '',
+    'urlsAndViews.departments',
 ]
 
 INSTALLED_APPS = [
