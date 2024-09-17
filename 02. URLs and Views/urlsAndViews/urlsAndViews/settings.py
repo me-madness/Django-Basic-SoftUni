@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k!m6wj!3)^*owz1ljd)6kuh2i&=#&)2=ioiu3ip-nr%7281uy='
+SECRET_KEY = 'django-insecure-(z2v6xdm*5&v2$d55y4zuk!8@8#yt@7k285xwkh62vps2gkv%f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,10 +30,6 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-MY_APPS = [
-    'urlsAndViews.departments',
-]
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-] + MY_APPS
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,13 +74,9 @@ WSGI_APPLICATION = 'urlsAndViews.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "urlsandviews",
-        "USER": "postgres",
-        "PASSWORD": "Dragulia131@",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
