@@ -7,6 +7,8 @@ from django.http import HttpResponse
 def index(request):
     
     context = {
-        "current_time": datetime.now()
+        "current_time": datetime.now(),
+        "": ,
+        "": ,
     }
     return render(request, 'base.html', context)
