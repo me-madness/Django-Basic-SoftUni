@@ -8,7 +8,9 @@ def index(request):
     
     context = {
         "current_time": datetime.now(),
-        "": ,
-        "": ,
+        "person": {
+            "age": 20,
+            "height": 190,
+            }
     }
     return render(request, 'base.html', context)
