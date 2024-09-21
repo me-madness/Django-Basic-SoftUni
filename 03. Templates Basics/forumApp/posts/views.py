@@ -11,6 +11,7 @@ def index(request):
         "person": {
             "age": 20,
             "height": 190,
-            }
+        },
+        "ids": ["62348764", "fwnj825456", "865sdfg2654"]
     }
     return render(request, 'base.html', context)
