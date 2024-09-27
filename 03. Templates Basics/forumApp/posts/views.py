@@ -25,3 +25,30 @@ def index(request):
     
     
     return render(request, 'base.html', context)
+
+
+def dashboard(request):
+    context = {
+        "posts": [
+            {
+                "title": "Hpw to create django project?",
+                "author": "Rangel Petrov",
+                "content": "i really don't know how to create a project",
+                "created_at": datetime.now(),
+            },
+            {
+                "title": "Hpw to create django project 1?",
+                "author": "Rangel Petrov",
+                "content": "i really don't know how to create a project",
+                "created_at": datetime.now(),
+            },
+            {
+                "title": "Hpw to create django project 2?",
+                "author": "Rangel Petrov",
+                "content": "i really don't know how to create a project",
+                "created_at": datetime.now(),
+            }
+        ]
+    }
+    
+    return render(request, 'posts/dashboard.html', context)
