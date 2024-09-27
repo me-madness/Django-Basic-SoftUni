@@ -10,10 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    {% if some_text %}
+        <h1>{{ some_text }}</h1>
+    {% else %}
+        <p>No results</p>
+    {% endif %}
+
+    <h1>{{ some_text|default:"Nothing was passed" }}</h1>
     <h1>Current time is: {{ current_time }}</h1>
 
     <p>Age: {{ person.age }}</p>
-    <p>Id num {{ ids.1 }}</p>
+    <p>Id num {{ ids|join:', ' }}</p>
 </body>
     <script src='https://unpkg.com/akar-icons-fonts'></script>
 </html>

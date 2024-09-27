@@ -12,7 +12,8 @@ def index(request):
             "age": 20,
             "height": 190,
         },
-        "ids": ["658921deer", "1232544dss", "4785swrs55"]
+        "ids": ["658921deer", "1232544dss", "4785swrs55"],
+        "some_text": "Hello my name is diyan, and i am a developer"
     }    
     
     
