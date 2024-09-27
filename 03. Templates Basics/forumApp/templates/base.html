@@ -23,6 +23,12 @@
 
     <p>Age: {{ person.age }}</p>
     <p>Id num {{ ids|join:', ' }}</p>
+    
+    <ol>
+        {% for user in users %}
+            <li>{{ user }}</li>
+        {% endfor %}
+    </ol>
 </body>
     <script src='https://unpkg.com/akar-icons-fonts'></script>
 </html>

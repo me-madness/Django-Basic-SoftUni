@@ -13,7 +13,14 @@ def index(request):
             "height": 190,
         },
         "ids": ["658921deer", "1232544dss", "4785swrs55"],
-        "some_text": "Hello my name is diyan, and i am a developer"
+        "some_text": "Hello",
+        "users": [
+            "Pesho",
+            "Ivan",
+            "Dragan",
+            "Kukumicin",
+            "Milen"
+        ]
     }    
     
     
