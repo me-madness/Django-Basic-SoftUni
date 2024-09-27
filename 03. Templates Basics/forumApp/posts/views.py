@@ -31,21 +31,21 @@ def dashboard(request):
     context = {
         "posts": [
             {
-                "title": "Hpw to create django project?",
+                "title": "How to create django project?",
                 "author": "Rangel Petrov",
-                "content": "i really don't know how to create a project",
+                "content": "I really don't know how to create a project",
                 "created_at": datetime.now(),
             },
             {
-                "title": "Hpw to create django project 1?",
-                "author": "Rangel Petrov",
-                "content": "i really don't know how to create a project",
+                "title": "How to create Angular project?",
+                "author": "Boris Petrov",
+                "content": "I really don't know how to create a project",
                 "created_at": datetime.now(),
             },
             {
-                "title": "Hpw to create django project 2?",
-                "author": "Rangel Petrov",
-                "content": "i really don't know how to create a project",
+                "title": "How to create React project?",
+                "author": "Samuil Petrov",
+                "content": "I really don't know how to create a project",
                 "created_at": datetime.now(),
             }
         ]

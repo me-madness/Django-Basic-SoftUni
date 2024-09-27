@@ -12,7 +12,9 @@
 <body>
     {% include 'nav.html' %}
 
-    {% if some_text %}
+    <h1>Hello User</h1>
+    
+    {% comment %} {% if some_text %}
         <h1>{{ some_text }}</h1>
     {% else %}
         <p>No results</p>
@@ -23,14 +25,14 @@
 
     <p>Age: {{ person.age }}</p>
     <p>Id num {{ ids|join:', ' }}</p>
-    
+
     <ol>
         {% for user in users %}
             <li>{{ user|upper }}</li>
         {% empty %}
             No users    
         {% endfor %}
-    </ol>
+    </ol> {% endcomment %}
 </body>
     <script src='https://unpkg.com/akar-icons-fonts'></script>
 </html>
