@@ -116,6 +116,9 @@ USE_I18N = True
 
 USE_TZ = True
 
+# This help ass to protect my cookies from Cyber attack
+# CSRF_COOKIE_SECURE = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
