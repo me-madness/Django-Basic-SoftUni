@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render # type: ignore
 
 
 def register(request):
@@ -9,7 +9,7 @@ def login(request):
     return render(request, 'accounts/login-page.html')
 
 
-def show_profile_details(request, pk: int):
+def profile_details(request, pk: int):
     return render(request, 'accounts/profile-details-page.html')
 
 
